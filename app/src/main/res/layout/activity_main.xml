@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+   <androidx.viewpager2.widget.ViewPager2
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/viewpager2"
+       android:layout_above="@id/BottomNav"
+       />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/BottomNav"
+        app:menu="@menu/nav"
+        app:activeIndicatorLabelPadding="5dp"
+        app:labelVisibilityMode="labeled"
+        />
+
+
+   </RelativeLayout>
+
+</LinearLayout>
