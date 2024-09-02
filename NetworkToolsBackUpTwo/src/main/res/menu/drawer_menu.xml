@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_share"
+
+            android:title="@string/ShareApp" />
+        <item
+            android:id="@+id/nav_feedback"
+
+            android:title="@string/Feedback" />
+        <item
+            android:id="@+id/nav_RetaUS"
+
+            android:title="@string/Retaus" />
+        <item
+            android:id="@+id/nav_Privacy_policy"
+
+            android:title="@string/PrivacyPolicy" />
+      <!--  <item
+            android:id="@+id/nav_more_apps"
+
+            android:title="@string/More_creativity" />-->
+    </group>
+    <item android:title="@string/VersionApp">
+        <menu>
+            <item
+                android:id="@+id/nav_versionApp"
+                android:title="1.2.5" />
+
+        </menu>
+    </item>
+</menu>

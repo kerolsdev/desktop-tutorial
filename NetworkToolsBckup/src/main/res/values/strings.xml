@@ -1,0 +1,106 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Network Tools</string>
+    <string name="check_wifi_connect">Knowing the people connected to the network WI-FI</string>
+    <string name="check_test_speed">Test the speed of the internet connected to it</string>
+    <string name="info_wifi_anathilys">Information about networks and signal strength</string>
+    <string name="mac">mac Address</string>
+    <string name="ip">ip Address</string>
+    <string name="vendor">Vendor </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Your_device">Your device</string>
+    <string name="The_router">The router</string>
+    <string name="Unknown">Unknown device</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Block">Block</string>
+    <string name="NO_INTERNET">there is no Internet</string>
+    <string name="WIFI_OFF">The wifi is disabled</string>
+    <string name="HotSpot_off">Wifi HotSpot is disabled</string>
+    <string name="Swipe">Swipe Up for Refresh</string>
+    <string name="WifiScanFragment">Who Use My WiFi</string>
+    <string name="HotSpotFragment">WIFI-HotSpot Scan</string>
+    <string name="Get_Start">Get Start </string>
+    <string name="Get_Start_now">Get Start now</string>
+    <string name="SpeedTest">Speed Test</string>
+    <string name="WifiHotSpot">WifiHotSpot</string>
+    <string name="WifiScan">Wifi</string>
+    <string name="PrivacyPolicy">Privacy Policy</string>
+    <string name="Retaus">Rate us</string>
+    <string name="VersionApp">Version App</string>
+    <string name="Feedback">Feedback</string>
+    <string name="ShareApp">Share App</string>
+    <string name="to_bloc">User blocked</string>
+    <string name="Enable">Enable</string>
+    <string name="More_creativity">More creativity</string>
+    <string name="There_app">There is no application</string>
+    <!--Admob ads -->
+    <string name="InterstitialAd">ca-app-pub-1102320340751314/4208789239</string>
+    <string name="banner">ca-app-pub-1102320340751314/5374337728</string>
+    <string name="Admob_Id">ca-app-pub-1102320340751314~9645303966</string>
+    <string name="native_ad">ca-app-pub-1102320340751314/7598978441</string>
+
+    <!--DrawerLayout menu  FeedBack  -->
+    <string name="Email_to">converterfiles1@gmail.com</string>
+    <string name="message">message</string>
+    <string name="subject">subject</string>
+    <string name="createChooser_title">Send Message</string>
+
+    <string name="ad_attribution" translatable="false">Ad</string>
+    <string name="Permission_Denied">Permission Denied</string>
+    <string name="Host">Host / public Ip</string>
+    <string name="subnet_mask">Subnet Mask</string>
+    <string name="broadcast_address">BroadCast Address</string>
+    <string name="gateway">GateWay</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="Please_rate">Please rate in order to improve the service</string>
+    <string name="feedback">I need Feedback</string>
+    <string name="WifiInfo">Wifi Info</string>
+    <string name="WifiScaner">WIFI Security</string>
+    <string name="please_wait_for_scan">Please wait for scan .... </string>
+    <string name="Wifi_signal">Wifi signal strength may be weak</string>
+    <string name="There">There is no security on this network (wifi password)</string>
+    <string name="there_is_no_Internet">there is no Internet</string>
+    <string name="All_is_well">All is well</string>
+    <string name="Mbps_textView">%1$s Mbps</string>
+    <string name="dBm_textView">%1$s dBm</string>
+
+
+    <string name="ci_labelx">Channel</string>
+    <string name="ci_labely">Strength (dBm)</string>
+    <string name="sg_labelx">Time (s)</string>
+    <string name="sg_labely">Strength (dBm)</string>
+
+
+    <string name="Search_model">Search.. Model or Brand</string>
+    <string name="brand">Brand</string>
+    <string name="username">userName</string>
+    <string name="password">Password</string>
+    <string name="model">Model</string>
+    <string name="Router_Passwords">Router Passwords</string>
+    <string name="WIFI_QR" translatable="false">WIFI Scanner Qr</string>
+    <string name="ssid" translatable="false">SSID</string>
+    <string name="pass" translatable="false">Password</string>
+    <string name="wps" translatable="false">Security</string>
+    <string name="Connect" translatable="false">Connect</string>
+    <string name="WIFI_INFO" translatable="false">WIFI Qr</string>
+    <string name="notification_error_ssl_cert_invalid" translatable="false">The site does\'t have SSL</string>
+
+    <string name="Decibel">Decibel</string>
+    <string name="Error" tools:ignore="ExtraTranslation">Found Error in Speed Test ...  Try Again</string>
+    <string name="Firewall">FireWall - Net Blocker</string>
+    <string name="Login">Router Login</string>
+
+    <string name="gps_network_not_enabled">Location is off,Android required for start analysis</string>
+    <string name="open_location_settings">enable</string>
+    <string name="Wifianalyzer">Wifi analyzer</string>
+    <string name="UnknownAna">Unknown (Hidden Network)</string>
+    <string name="Connect_by_Password">Connect with Password</string>
+    <string name="Connect_by_wps">Connect with WPS Pin Code</string>
+    <string name="Connect_by_wps_auto">generator wps pin code</string>
+    <string name="try_to_connection">Try To Connection</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="manage_subscription">Manage Subscription</string>
+    <string name="subscription">Subscription</string>
+    <string name="Theme">Theme</string>
+</resources>

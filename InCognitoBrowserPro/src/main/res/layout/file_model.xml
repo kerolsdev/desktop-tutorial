@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    tools:viewBindingIgnore="true"
+    android:layout_height="wrap_content">
+
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                app:cardCornerRadius="26dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                app:strokeWidth="0dp"
+                app:cardBackgroundColor="#51656565"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/FileSrc"
+                    android:scaleType="center"
+                    app:tint="@color/white"
+                    android:src="@drawable/ic_file_svgrepo_com__1_"
+                    />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/FileName"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:gravity="bottom"
+                    android:ellipsize="end"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/File_url"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:id="@+id/more_download"
+                app:tint="@color/white"
+                android:background="?selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_baseline_more_vert_24"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+

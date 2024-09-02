@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/ColorPrime"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/image_onBoarding"
+        android:src="@drawable/ic_family"
+        android:scaleType="centerCrop"
+        app:tint = "@color/white"
+        android:layout_above="@id/text_onBoarding"
+        android:layout_centerHorizontal="true"
+
+        />
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_onBoarding"
+        android:textSize="@dimen/size_16_sp"
+        android:lineSpacingExtra="5dp"
+        android:textColor="#fff"
+        android:layout_marginTop="@dimen/margin_24_dp"
+        android:gravity="center"
+        android:text="@string/check_wifi_connect"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+
+</RelativeLayout>

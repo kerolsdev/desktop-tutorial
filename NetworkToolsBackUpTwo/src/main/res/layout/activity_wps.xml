@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/ColorPrime">
+
+<!--    <FrameLayout
+        android:id="@+id/banner_footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+    </FrameLayout>-->
+
+<!--    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner"
+        tools:ignore="MissingClass">
+    </com.google.android.gms.ads.AdView>-->
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/swiperefresh"
+        >
+<!--     android:layout_below="@id/banner_footer"-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listwps"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/ColorPrime"
+        android:divider="@color/white"
+        android:dividerHeight="2dp"
+        android:padding="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbarSize="2dp"
+        android:scrollbarThumbVertical="@color/white">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/ProgressbarWps"
+        />
+
+</RelativeLayout>

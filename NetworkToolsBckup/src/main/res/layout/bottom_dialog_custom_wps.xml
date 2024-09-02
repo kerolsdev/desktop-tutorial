@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/shape"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="16dp"
+        android:text=""
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="add Wps Pin Code"
+        android:textColor="@color/white"
+        android:textColorHint="#807E7E"
+        android:id="@+id/edit"
+        android:inputType="number"
+        android:backgroundTint="@color/white"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_gravity="center"
+        android:id="@+id/layout_btn"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:elevation="0dp"
+            android:text="@string/Cancel"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            app:cornerRadius="24dp"
+            app:elevation="0dp"
+            tools:ignore="UnusedAttribute" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_connect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:text="@string/Connect"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:elevation="0dp"
+            android:textAllCaps="false"
+            app:elevation="0dp"
+            app:cornerRadius="24dp"
+            tools:ignore="UnusedAttribute" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:backgroundTint="@color/bg"
+    android:background="@color/bg"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.CleanerHome"
+    >
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:backgroundTint="@color/bg"
+        android:background="@color/bg"
+        android:minHeight="390dp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="?actionBarSize"
+        >
+<!--        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_Banner">
+        </com.google.android.gms.ads.AdView>-->
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:cardBackgroundColor="@color/bg"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/delete_empty_folders"
+                android:layout_marginStart="16dp"
+                android:gravity="start|center_vertical"
+                android:layout_marginEnd="16dp"
+                android:textSize="16sp"
+                android:textColor="@color/textColor"
+                android:layout_weight="1"
+                />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="24dp"
+            android:id="@+id/Empty"
+            android:paddingStart="24dp"
+            />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/bg"
+
+        app:strokeWidth="0dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="@string/corpse_title"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:gravity="start|center_vertical"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="1"
+                />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/corpse_summary"
+                    android:layout_marginStart="16dp"
+                    android:textSize="13sp"
+                    android:textColor="#878787"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="24dp"
+                android:id="@+id/Corpse"
+                android:layout_gravity="center"
+                android:paddingStart="24dp"
+                />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/bg"
+
+        app:strokeWidth="0dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/delete_apk_files"
+                    android:layout_marginStart="16dp"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textColor="@color/textColor"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/apk_sum"
+                    android:layout_marginStart="16dp"
+                    android:textColor="#878787"
+                    android:gravity="start|center_vertical"
+                    android:textSize="13sp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="24dp"
+                android:id="@+id/Apk"
+                android:layout_gravity="center"
+                android:paddingStart="24dp"
+                />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/bg"
+
+            app:strokeWidth="0dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/delete_thumb_folder"
+                        android:layout_marginStart="16dp"
+                        android:gravity="start|center_vertical"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColor"
+                        />
+
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="24dp"
+                    android:id="@+id/thumb"
+                    android:layout_gravity="center"
+                    android:paddingStart="24dp"
+                    />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/bg"
+            app:strokeWidth="0dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/delete_junk_Files"
+                        android:layout_marginStart="16dp"
+                        android:gravity="start|center_vertical"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColor"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/files_junk"
+                        android:layout_marginStart="16dp"
+                        android:textColor="#878787"
+                        android:gravity="start|center_vertical"
+                        android:textSize="13sp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="24dp"
+                    android:id="@+id/Junks"
+                    android:layout_gravity="center"
+                    android:paddingStart="24dp"
+                    />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@color/bg"
+        android:id="@+id/CachedVisiableAppsLayout"
+        app:strokeWidth="0dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/delete_visible"
+                    android:layout_marginStart="16dp"
+                    android:gravity="start|center_vertical"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:textColor="@color/textColor"
+                    />
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingEnd="24dp"
+                android:layout_gravity="center"
+                android:id="@+id/VisiableCached"
+                android:paddingStart="24dp"
+                />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/bg"
+            android:id="@+id/CachedAppsLayout"
+            app:strokeWidth="0dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/Cache"
+                        android:layout_marginStart="16dp"
+                        android:gravity="start|center_vertical"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        android:textSize="16sp"
+                        android:textColor="@color/textColor"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:text="@string/cashed"
+                        android:visibility="gone"
+                        android:layout_marginStart="16dp"
+                        android:gravity="start|center_vertical"
+                        android:layout_marginEnd="16dp"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingEnd="24dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/CachedApps"
+                    android:paddingStart="24dp"
+                    />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnclick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp"
+        android:textSize="18sp"
+        android:text="@string/clean"
+        android:visibility="visible"
+        app:backgroundTint="@color/colorPrimary" />
+    </RelativeLayout>
+</ScrollView>

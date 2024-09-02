@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card">230dp</dimen>
+    <dimen name="round">115dp</dimen>
+    <dimen name="textmain">30sp</dimen>
+    <dimen name="textsize">26sp</dimen>
+
+    <dimen name="card_two">55dp</dimen>
+    <dimen name="card_round">18dp</dimen>
+    <dimen name="textcardTwo">22sp</dimen>
+    <dimen name="sizelayout">850dp</dimen>
+
+</resources>

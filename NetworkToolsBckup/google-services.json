@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "93517201679",
+    "project_id": "networktools-459d3",
+    "storage_bucket": "networktools-459d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93517201679:android:338907366e975d5b13fe7a",
+        "android_client_info": {
+          "package_name": "com.wifinet.internetcheck"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbu6g9gZcwCIC5PhV00TtYK9FxVgxGEGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

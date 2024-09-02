@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Etolv</string>
+    <string name="Token">eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvG9
+9ydGFsLWFWaSlGd9Gsi5uZXRCtL3B1YmxpY1wvYXBxc91C2Vyc1wvbG9
+naW4iLCJpYXQiOjE3MTk2ODMI1NDksIm5iZiI6MTkxOTY4MzU0O0swianRp
+IjoiSmN0Qb2tvdGFHNIJGmVuaSI6InN1Yl6MjExMDAwNywicHJlZiJoiYzJiZ
+DU3bNM0NyJiNzlfX0DAYnGOQ0WN0jOGVlNjE0YmJhhM2RlMzY5MCJ9.qP
+AZtzPBKpXZ9RPvT039DAJzJWMHytj98PHjujN7Jjg
+</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>

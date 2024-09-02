@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/colorPrimary"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="?attr/colorPrimary"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/white"
+            android:id="@+id/Toolbar_Download"
+            app:title="@string/Download"
+            android:theme="@style/Base_ToolbarTheme"
+
+            />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical"
+        >
+
+       <!-- <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrime"
+        android:id="@+id/tablayout"
+        app:tabSelectedTextColor="@color/ColorAct"
+        app:tabIndicatorColor="@color/ColorAct"
+        app:tabTextColor="@color/white"
+        />-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarDownloadProgress"
+            android:background="?selectableItemBackground"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="50dp"
+               android:layout_height="50dp"
+               android:background="@color/colorPrime"
+               app:cardBackgroundColor="@color/colorPrime"
+               android:layout_margin="16dp"
+               >
+
+               <ImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   app:tint="@color/white"
+                   android:layout_gravity="center"
+                   android:src="@drawable/ic_download_svgrepo_com__2_"
+                   />
+
+
+
+
+
+           </com.google.android.material.card.MaterialCardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Progress"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check whether there is a download now"
+                    android:textColor="#BCBBBB"
+                    />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:tint="@color/white"
+                android:scaleType="center"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_arrow_forward_ios_24"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#505050"
+            />
+
+
+      <!-- <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager2"
+        />-->
+
+        <RelativeLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".DownloaderApp.FragmentProgressDownload"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/list_download"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="vertical"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:text="@string/the_list_is_empty"
+                android:id="@+id/the_list_is_empty"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

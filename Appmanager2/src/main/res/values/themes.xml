@@ -1,0 +1,97 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AppManager" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--  Primary brand color.  -->
+
+        <item name="colorPrimary">#167B20</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#4AAE54</item>
+        <item name="colorOnPrimaryContainer">#FFFFFF</item>
+        <item name="colorPrimaryDark">@color/white</item>
+
+        <!--  Secondary brand color.  -->
+        <item name="colorSecondary">#167B20</item>
+        <item name="colorSecondaryVariant">#FFF</item>
+        <item name="colorOnSecondary">#FFF</item>
+
+        <item name="colorSecondaryContainer">#A6F3CC</item>
+        <item name="colorOnSecondaryContainer">#00190C</item>
+
+
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="colorSurface">@color/white</item>
+
+
+        <item name="android:navigationBarColor">#F0FBF0</item>
+        <item name="colorControlNormal">@color/black</item>
+
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <!--  Status bar color.  -->
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
+        <item name="searchViewStyle">@style/SearchViewMy</item>
+
+
+ <!--       <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>-->
+
+    </style>
+
+    <style name="SearchViewMy" parent="Widget.AppCompat.SearchView">
+        <item name="iconTint">@null</item>
+        <item name="background">@null</item>
+        <item name="queryHint">Seach</item>
+        <item name="searchHintIcon">@null</item>
+        <item name="backgroundColor">@null</item>
+        <item name="submitBackground">@color/white</item>
+        <item name="queryBackground">@color/white</item>
+        <item name="android:iconTint" tools:ignore="NewApi">@null</item>
+    </style>
+
+
+    <style name="ThemeOverlay.App.BottomSheetDialog" parent="Theme.Material3.DayNight.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheetDialog</item>
+        <item name="android:navigationBarColor">#F8F8F8</item>
+    </style>
+
+    <style name="ModalBottomSheetDialog" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">#F8F8F8</item>
+        <item name="android:backgroundTint">#F8F8F8</item>
+    </style>
+
+    <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation
+        duration. -->
+        <item name="windowSplashScreenBackground">#0B5813</item>
+
+        <!-- Use windowSplashScreenAnimatedIcon to add a drawable or an animated
+             drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <!-- Required for animated icons. -->
+        <item name="windowSplashScreenAnimationDuration">200</item>
+
+        <!-- Set the theme of the Activity that directly follows your splash
+        screen. This is required. -->
+        <item name="postSplashScreenTheme">@style/Base.Theme.AppManager</item>
+    </style>
+
+
+    <style name="Base_ToolbarTheme">
+        <!--  Color used for the title of the Toolbar - as long as not overridden  -->
+        <item name="android:textColorPrimary">#000</item>
+        <item name="android:textColorSecondary">#000</item>
+        <!--  Used to color back button and three dots  -->
+        <item name="android:textColorHint">#8B1B1B1B</item>
+    </style>
+
+    <style name="Theme.AppManager" parent="Base.Theme.AppManager" />
+</resources>

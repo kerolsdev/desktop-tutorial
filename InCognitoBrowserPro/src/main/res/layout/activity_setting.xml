@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/colorPrime"
+    android:background="@color/colorPrime"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="?attr/colorPrimary"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Toolbar_setting"
+            app:title="@string/setting"
+            app:titleTextColor="@color/white"
+            />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@color/colorPrime"
+        android:backgroundTint="@color/colorPrime"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/download"
+            android:gravity="center_vertical"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textSize="16sp"
+            android:id="@+id/SettingDownload"
+            android:background="?attr/selectableItemBackground"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/accessibility"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:id="@+id/SettingAccessibility"
+            android:background="?attr/selectableItemBackground"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="@string/SearchEngine"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:id="@+id/SearchEngine"
+            android:background="?attr/selectableItemBackground"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:id="@+id/SettingDefaultRealy"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/settingDefaultRealy"/>
+
+        <com.google.android.material.materialswitch.MaterialSwitch
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:gravity="center_vertical"
+            android:id="@+id/Adblock"
+            app:trackTint="@color/color"
+            app:trackDecorationTint="@color/white"
+            app:thumbTint="@color/color_two"
+            android:textColor="@color/white"
+            android:text="@string/adblock"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="12dp"
+            android:background="#E4E4E4"
+            android:layout_marginTop="12dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/about"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="#DDDDDD"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/rate_on_google_play"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:id="@+id/SettingGooglePlayStore"
+            android:background="?attr/selectableItemBackground"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/ShareApp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:visibility="visible"
+            android:background="?attr/selectableItemBackground"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:id="@+id/ShareApp"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/AdsPrivcay"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:visibility="gone"
+            android:background="?attr/selectableItemBackground"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:id="@+id/AdsPrivcay"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/PrivacyPolicy"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:visibility="visible"
+            android:background="?attr/selectableItemBackground"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:id="@+id/PrivacyPolicy"
+
+            />
+    </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

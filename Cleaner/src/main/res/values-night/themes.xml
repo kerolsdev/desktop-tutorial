@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PhoneBooster" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/bg</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="android:textColor">@color/black</item>
+        <item name="colorSecondary">@color/colorSecond</item>
+        <item name="colorSecondaryVariant">@color/colorSecond</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="theme">@style/ThemeToolbar</item>
+        <item name="colorControlHighlight">#D3D3D3</item>
+        <item name="searchViewStyle">@style/SearchViewMy</item>
+
+        <item name="colorControlNormal">@color/black</item>
+        <item name="android:colorControlNormal">@color/black</item>
+
+        <item name="checkboxStyle">@style/Widget.App.CheckBox</item>
+
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:actionMenuTextColor">@color/white</item>
+
+    </style>
+
+    <style name="ThemeToolbar">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorPrimary">@color/textColor</item>
+        <item name="colorControlNormal">@color/textColor</item>
+        <item name="android:colorControlNormal">@color/textColor</item>
+    </style>
+
+    <style name="circle">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="SearchViewMy" parent="Widget.AppCompat.SearchView">
+        <item name="iconTint">@null</item>
+        <item name="background">@null</item>
+        <item name="searchHintIcon">@null</item>
+        <item name="backgroundColor">@null</item>
+        <item name="submitBackground">@color/bg</item>
+        <item name="queryBackground">@color/bg</item>
+        <item name="android:iconTint" tools:ignore="NewApi">@null</item>
+    </style>
+
+
+    <style name="AppThemeBooster" parent="Theme.SplashScreen" >
+        <!-- Set the splash screen background, animated icon, and animation duration. -->
+        <item name="windowSplashScreenBackground">@color/colorPrimary</item>
+        <!-- Use windowSplashScreenAnimatedIcon to add either a drawable or an
+             animated drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <!-- Required for animated icons -->
+        <item name="windowSplashScreenAnimationDuration">200</item>
+
+        <!-- Set the theme of the Activity that directly follows your splash screen. -->
+        <!-- Required -->
+        <item name="postSplashScreenTheme">@style/Theme.PhoneBooster</item>
+    </style>
+
+
+
+    <style name="Widget.App.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.CheckBox</item>
+    </style>
+
+    <style name="ThemeOverlay.App.CheckBox" parent="">
+        <item name="colorSecondary">@color/colorPrimary</item>
+        <item name="colorOnSurface">@color/checkboxColor</item>
+    </style>
+
+
+
+
+
+
+</resources>

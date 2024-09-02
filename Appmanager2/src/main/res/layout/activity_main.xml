@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        >
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            android:backgroundTint="@color/white"
+            android:background="@color/white"
+            android:theme="@style/Base_ToolbarTheme"
+            app:titleTextColor="@color/black"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DCD6D6"
+            android:layout_above="@id/viewpager2"
+            />
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            ads:adUnitId="ca-app-pub-1102320340751314/6200681881">
+        </com.google.android.gms.ads.AdView>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+
+
+   <androidx.viewpager2.widget.ViewPager2
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/viewpager2"
+       android:layout_above="@id/BottomNav"
+       />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/BottomNav"
+        app:menu="@menu/nav"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:backgroundTint="#F0FBF0"
+        app:labelVisibilityMode="labeled"
+        />
+
+
+   </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

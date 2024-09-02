@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card">180dp</dimen>
+    <dimen name="round">90dp</dimen>
+
+    <dimen name="textsize">16sp</dimen>
+    <dimen name="textmain">21sp</dimen>
+    <dimen name="card2">220dp</dimen>
+    <dimen name="round2">110dp</dimen>
+
+    <dimen name="card_two">45dp</dimen>
+    <dimen name="card_round">12dp</dimen>
+
+
+    <dimen name="textcardTwo">16sp</dimen>
+    <dimen name="sizelayout">600dp</dimen>
+
+</resources>

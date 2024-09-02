@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="banner_height">50dp</dimen>
+    <dimen name="toolbar">53dp</dimen>
+    <dimen name="widthx">215dp</dimen>
+    <dimen name="toolbar2">40dp</dimen>
+
+</resources>

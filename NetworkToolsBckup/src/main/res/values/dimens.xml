@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <dimen name="margin_top_150">150dp</dimen>
+    <dimen name="size_16_sp">16sp</dimen>
+    <dimen name="size_14_sp">14sp</dimen>
+    <dimen name="size_22_p">22sp</dimen>
+    <dimen name="margin_24_dp">24dp</dimen>
+    <dimen name="size_16_dp">16</dimen>
+    <dimen name="size_8_dp">8dp</dimen>-->
+
+<!--    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>-->
+
+    <dimen name="diagram_axis_labels_fontsize">14sp</dimen>
+<!--
+    <dimen name="button_width">135dp</dimen>
+    <dimen name="button_height">40dp</dimen>-->
+</resources>

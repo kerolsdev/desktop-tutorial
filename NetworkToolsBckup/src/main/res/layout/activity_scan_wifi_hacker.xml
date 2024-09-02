@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.ScanWifiHacker"
+    
+    
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        
+        tools:context=".Activity.ScanWifiHacker"
+        
+        >
+
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+       android:layout_marginBottom="?actionBarSize"
+    
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:id="@+id/ProBar_Layout"
+        android:layout_marginTop="12dp"
+        >
+
+    <ProgressBar
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+
+        android:progress="0"
+        android:max="100"
+        android:layout_centerInParent="true"
+        android:id="@+id/Pro_Loading"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 %"
+        android:layout_centerInParent="true"
+        android:textSize="21sp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
+        android:id="@+id/text_pro_loading"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Single_Result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffb818"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/Connection_Result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffb818"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/Encrypted_Result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="#ffb818"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/Result_Done_View"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/Done_result_immg"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_approve"
+                    />
+
+                <TextView
+                    android:id="@+id/Done_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/All_is_well"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+       <TextView
+           android:id="@+id/text_pro"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/ProBar_Layout"
+           android:layout_centerInParent="true"
+           android:text="@string/please_wait_for_scan"
+           android:textColor="#0288D1"
+           android:textSize="16sp" />
+   </RelativeLayout>
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#424242"
+           android:layout_gravity="bottom"
+           >
+
+<!--           <FrameLayout
+               android:id="@+id/banner_footer2"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_alignParentBottom="true"
+               android:visibility="gone">
+           </FrameLayout>-->
+
+      <!-- <FrameLayout
+           android:id="@+id/my_template_scan"
+           android:layout_width="match_parent"
+           android:visibility="gone"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginBottom="6dp"
+           android:layout_centerInParent="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="6dp"
+           android:layout_height="wrap_content" />-->
+
+       </RelativeLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+<!-- android:layout_below="@id/text_pro"-->

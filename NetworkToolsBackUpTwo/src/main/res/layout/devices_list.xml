@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/layout_Devices_List"
+    android:background="@color/ColorPrime"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:orientation="horizontal"
+    android:layout_marginRight="16dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#fff"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:text="num_device"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/num_device"
+        tools:ignore="RtlHardcoded" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_state_Network"
+        android:textColor="#fff"
+        android:text="@string/Swipe"
+        android:gravity="right"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        tools:ignore="RtlHardcoded" />
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ColorPrime"
+        android:id="@+id/Device_List"
+        />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<!--        <FrameLayout
+            android:id="@+id/banner_footer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+        </FrameLayout>-->
+        <!--    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner"
+        tools:ignore="MissingClass">
+    </com.google.android.gms.ads.AdView>-->
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,147 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PrivateBrowser" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#22272E</item>
+        <item name="colorPrimaryVariant">#22272E</item>
+        <item name="colorOnPrimary">#22272E</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#fff</item>
+        <item name="colorSecondaryVariant">#fff</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorAccent">@color/ColorAct</item>
+        <item name="android:colorAccent">@color/ColorAct</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="materialSwitchStyle">@style/Widget.App.Switch</item>
+        <item name="android:colorBackground">#22272E</item>
+        <item name="bottomSheetDialogTheme">@style/CustomBottomSheetDialogTheme</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.App.MaterialAlertDialog</item>
+
+        <item name="alertDialogTheme">@style/MyAlertDialogStyle</item>
+        <item name="alertDialogStyle">@style/MyAlertDialogStyle</item>
+        <item name="android:alertDialogStyle">@style/MyAlertDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/MyAlertDialogStyle</item>
+        <item name="android:textDirection">locale</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlHighlight">#8A8A8A</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+
+    <style name="YOURSTYLE.PopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@android:color/background_dark</item>
+        <item name="android:itemBackground">#FFFFFF</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+    </style>
+
+
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Material3.DayNight.BottomSheetDialog">
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="materialSwitchStyle">@style/Widget.App.Switch</item>
+        <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="bottomSheetStyle">@style/bottomModel</item>
+
+    </style>
+    <style name="bottomModel" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <!-- <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+     <item name="android:background">@drawable/shape_taps</item>
+     </style>
+ <style name="CustomDatePickerDialog" parent="Theme.Design.Light.BottomSheetDialog">
+     <item name="android:layout_width">match_parent</item>
+     <item name="android:layout_height">100dp</item>
+     <item name="android:windowIsFloating">true</item>
+ </style>-->
+
+    <style name="Theme.App.Dialog.FullScreen"
+        parent="Theme.Material3.DayNight.Dialog">
+        <!-- (1)-->
+        <item name="android:windowIsFloating">false</item>
+        <!-- (2) -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+
+    <style name="Widget.App.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.Switch</item>
+    </style>
+
+    <style name="ThemeOverlay.App.Switch" parent="">
+        <item name="colorPrimary">#22272E</item>
+    </style>
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">#22272E</item>
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text</item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Button</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/ColorAct</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">#000</item>
+        <!-- Used for the background -->
+        <item name="android:textColor">@color/black</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">#000000</item>
+
+    </style>
+    <style name="Base_ToolbarTheme">
+        <!-- Color used for the title of the Toolbar - as long as not overridden -->
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:textColorSecondary">#FFF</item>
+        <!-- Used to color back button and three dots -->
+        <item name="actionOverflowButtonStyle">@style/Widget.AppCompat.ProgressBar.Horizontal</item>
+
+        <item name="android:textColorHint">#ffff</item>
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Set the splash screen background, animated icon, and animation duration. -->
+        <item name="windowSplashScreenBackground">@color/colorPrime</item>
+
+        <!-- Use windowSplashScreenAnimatedIcon to add either a drawable or an
+             animated drawable. One of these is required. -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+        <!-- Required for animated icons -->
+        <item name="windowSplashScreenAnimationDuration">200</item>
+
+        <!-- Set the theme of the Activity that directly follows your splash screen. -->
+        <!-- Required -->
+        <item name="postSplashScreenTheme">@style/Theme.PrivateBrowser</item>
+    </style>
+
+
+</resources>

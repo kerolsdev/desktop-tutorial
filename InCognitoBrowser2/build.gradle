@@ -1,0 +1,116 @@
+plugins {
+    id 'com.android.application'
+/*    id 'applovin-quality-service'*/
+}
+
+/*applovin {
+    apiKey "VtNqveL4_9tHVCw7NIX2kE6l_ALTPhHOBfby6aRbli1ppO_yL2AnDB29E0XtzOvUtMiU5SivAc0XoWngnfZCym"
+}*/
+
+
+android {
+    namespace 'com.kerolsmm.incognito'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.kerolsmm.incognito"
+        minSdk 21
+        targetSdk 34
+        versionCode 163
+        versionName "1.10.63"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    /*    vectorDrawables.useSupportLibrary = true*/
+    }
+
+    buildTypes {
+        release {
+            debuggable  false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable  true
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+        buildConfig true
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.activity:activity:1.9.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    /*implementation 'com.google.firebase:firebase-crashlytics-buildtools:2.9.9'*/
+
+    def room_version = "2.6.1"
+    implementation "androidx.room:room-runtime:2.6.1"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    // optional - Guava support for Room, including Optional and ListenableFuture
+    implementation "androidx.room:room-guava:$room_version"
+
+    // optional - Test helpers
+    testImplementation "androidx.room:room-testing:$room_version"
+
+    // optional - Paging 3 Integration
+    implementation "androidx.room:room-paging:$room_version"
+
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:3.0.0-RC3'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.15.0'
+    implementation 'com.google.android.gms:play-services-ads:23.2.0'
+
+    // So, make sure you also include that repository in your project's build.gradle file.
+    implementation 'com.google.android.play:review:2.0.1'
+    // For Kotlin users also add the Kotlin extensions library for Play In-App Review:
+
+    implementation 'com.google.android.play:review-ktx:2.0.1'
+
+    def fragment_version = "1.6.2"
+    // Java language implementation
+    implementation "androidx.fragment:fragment:1.7.0"
+
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+
+    def appcompat_version = "1.5.1"
+    implementation "androidx.appcompat:appcompat-resources:$appcompat_version"
+    // implementation 'com.applovin.mediation:unityads-adapter:4.9.1.0'
+
+    /* implementation 'androidx.annotation:annotation:1.6.0'*/
+    implementation 'androidx.core:core-splashscreen:1.0.1'
+    // implementation 'com.applovin:applovin-sdk:11.11.3'
+    /* implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'*/
+
+
+    implementation ("io.reactivex.rxjava3:rxandroid:3.0.2")
+    // Because RxAndroid releases are few and far between, it is recommended you also
+    // explicitly depend on RxJava's latest version for bug fixes and new features.
+    // (see https://github.com/ReactiveX/RxJava/releases for latest 3.x.x version)
+    implementation ("io.reactivex.rxjava3:rxjava:3.1.5")
+
+    implementation("com.google.android.ump:user-messaging-platform:2.2.0")
+    implementation 'androidx.preference:preference:1.2.1'
+
+/*    implementation 'com.applovin:applovin-sdk:12.1.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'*/
+
+}

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".dialogs.BottomDialogApp"
+    tools:viewBindingIgnore="false"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dialogs.BottomDialogApp"
+    tools:viewBindingIgnore="false"
+    >
+
+
+
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:id="@+id/drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="11dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textIsSelectable="true"
+        android:id="@+id/textAppName"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(Package Name)"
+        android:padding="6dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="6dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:id="@+id/packageManager"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="11dp"
+        android:id="@+id/shareApk"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal"
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FFF"
+            app:strokeColor="@color/white"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/apk_file_format_symbol_svgrepo_com"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="share Apk"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:scaleType="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_up_right_svgrepo_com"
+            />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="11dp"
+        android:id="@+id/shareLink"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FFFFFF"
+            app:strokeColor="@color/white"
+
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/link_alt_1_svgrepo_com"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="share Link"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:scaleType="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_up_right_svgrepo_com"
+            />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="11dp"
+        android:background="?selectableItemBackground"
+        android:id="@+id/openApp"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FFFFFF"
+            app:strokeColor="@color/white"
+
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/open_in_new_window_svgrepo_com"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Open App"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:scaleType="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_up_right_svgrepo_com"
+            />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="11dp"
+        android:id="@+id/openAppStore"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FFFFFF"
+            app:strokeColor="@color/white"
+
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/google_play_store_svgrepo_com"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="open App in Google Store "
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:scaleType="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_up_right_svgrepo_com"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="11dp"
+        android:background="?selectableItemBackground"
+        android:id="@+id/Appinfo"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FFFFFF"
+            app:strokeColor="@color/white"
+
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/info_circle_svgrepo_com"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="App info"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:scaleType="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_up_right_svgrepo_com"
+            />
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="11dp"
+        android:id="@+id/AppSize"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FFFFFF"
+            app:strokeColor="@color/white"
+
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/storage_svgrepo_com"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="App Size"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:scaleType="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_up_right_svgrepo_com"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="11dp"
+        android:id="@+id/AppUninstall"
+        android:background="?selectableItemBackground"
+        android:orientation="horizontal"
+        >
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="#FFFFFF"
+            app:strokeColor="@color/white"
+
+            >
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/delete_1487_svgrepo_com"
+                />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="App uninstall"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:scaleType="center"
+            android:layout_height="match_parent"
+            android:src="@drawable/arrow_up_right_svgrepo_com"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

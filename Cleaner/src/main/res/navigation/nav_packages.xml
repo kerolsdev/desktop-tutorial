@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_packages"
+    app:startDestination="@id/packagelist">
+
+    <fragment
+        android:id="@+id/packageScan"
+        android:name="com.kerols.phoneboost.Fragments.PackageScan"
+        android:label=""
+        tools:layout="@layout/fragment_package_scan" >
+        <action
+            android:id="@+id/action_packageScan_to_package_finish2"
+            app:destination="@id/package_finish"
+            app:popUpTo="@id/packageScan"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right" />
+        <argument android:name="packets"
+            app:argType="string[]" />
+    </fragment>
+    <fragment
+        android:id="@+id/packagelist"
+        android:name="com.kerols.phoneboost.Fragments.Packagelist"
+        android:label="Apps"
+        tools:layout="@layout/fragment_packagelist" >
+        <action
+            android:id="@+id/action_packagelist_to_packageScan"
+            app:destination="@id/packageScan"
+            app:popUpTo="@id/packagelist"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/slide_left"
+            app:exitAnim="@anim/wait_anim"
+            app:popEnterAnim="@anim/wait_anim"
+            app:popExitAnim="@anim/slide_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/package_finish"
+        android:name="com.kerols.phoneboost.Fragments.Package_finish"
+        android:label=""
+        tools:layout="@layout/fragment_package_finish" />
+</navigation>
